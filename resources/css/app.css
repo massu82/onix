@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+:root{
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-gray: #646261;
+    --color-khaki: #C0B07B;
+    --color-timberwolf: #D4CFCB;
+    --color-olive: #97937c;
+}
