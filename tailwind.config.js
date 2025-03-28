@@ -33,7 +33,7 @@ export default {
             colors: {
                 black: "var(--color-black)",
                 white: "var(--color-white)",
-                gray: "var(--color-gray)",
+                graytheme: "var(--color-gray)",
                 khaki: "var(--color-khaki)",
                 timberwolf: "var(--color-timberwolf)",
                 olive: "var(--color-olive)",
