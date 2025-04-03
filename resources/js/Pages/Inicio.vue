@@ -127,9 +127,8 @@
                             </form>
 
                             <div class="flex items-center space-x-6">
-                                <a href="#" class="text-sm font-medium text-white hover:text-gray-100">Sign in</a>
-                                <a href="#" class="text-sm font-medium text-white hover:text-gray-100">Create an
-                                    account</a>
+                                <a href="#" class="text-sm font-medium text-white hover:text-gray-100">Entrar</a>
+                                <a href="#" class="text-sm font-medium text-white hover:text-gray-100">Registrarse</a>
                             </div>
                         </div>
                     </div>
@@ -144,7 +143,7 @@
                                         <a href="#">
                                             <span class="sr-only">La Casa del Onix</span>
                                             <img class="h-12 w-auto"
-                                                 src="/logos/logo-white.webp"
+                                                 src="/logos/logo-white.png"
                                                  alt="La Casa del Onix"/>
                                         </a>
                                     </div>
@@ -217,31 +216,27 @@
                                             <span class="sr-only">Open menu</span>
                                             <Bars3Icon class="size-6" aria-hidden="true"/>
                                         </button>
-
-                                        <!-- Search -->
-                                        <a href="#" class="ml-2 p-2 text-white">
-                                            <span class="sr-only">Buscar</span>
-                                            <MagnifyingGlassIcon class="size-6" aria-hidden="true"/>
-                                        </a>
                                     </div>
 
                                     <!-- Logo (lg-) -->
                                     <a href="#" class="lg:hidden">
                                         <span class="sr-only">La Casa del Onix</span>
-                                        <img src="/logos/logo-white.webp"
+                                        <img src="/logos/logo-white.png"
                                              alt="La Casa del Onix" class="h-8 w-auto"/>
                                     </a>
 
-                                    <div class="flex flex-1 items-center justify-end">
-                                        <a href="#" class="hidden text-sm font-medium text-white lg:block">Buscar</a>
+                                    <div class="flex flex-1 items-center justify-end space-x-4">
 
-                                        <div class="flex items-center lg:ml-8">
-                                            <!-- Help -->
-                                            <a href="#" class="p-2 text-white lg:hidden">
-                                                <span class="sr-only">Ayuda</span>
-                                                <QuestionMarkCircleIcon class="size-6" aria-hidden="true"/>
+                                        <div class="flex items-center lg:ml-8 gap-2">
+                                            <a href="https://facebook.com/lacasadelonix" target="_blank"
+                                               rel="noopener noreferrer">
+                                                <Facebook class="w-6 h-6 text-white hover:text-blue-800"/>
                                             </a>
-                                            <a href="#" class="hidden text-sm font-medium text-white lg:block">Ayuda</a>
+                                            <a href="https://instagram.com/lacasadelonix" target="_blank"
+                                               rel="noopener noreferrer">
+                                                <Instagram class="w-6 h-6 text-white hover:text-pink-700"/>
+                                            </a>
+
 
                                             <!-- Cart
                                             <div class="ml-4 flow-root lg:ml-8">
@@ -262,7 +257,7 @@
             </header>
 
             <div class="relative mx-auto flex max-w-3xl flex-col items-center px-6 py-32 text-center sm:py-64 lg:px-0">
-                <h1 class="text-4xl font-alt font-semibold tracking-normal text-khaki lg:text-6xl">La Casa del Onix</h1>
+                <h1 class="text-4xl font-alt font-semibold tracking-normal text-khaki lg:text-5xl">La Casa del Onix</h1>
                 <p class="mt-4 text-xl text-white">Transformamos las piedras mas rústicas de ónix y mármol que la
                     naturaleza ha creado en una hermosa obra de arte.</p>
                 <a href="#catalogo"
@@ -277,8 +272,9 @@
                      class="mx-auto max-w-xl px-4 pt-24 sm:px-6 sm:pt-32 lg:max-w-7xl lg:px-8">
                 <h2 id="collection-heading" class="text-2xl font-semibold tracking-normal text-black">Comprar por
                     categoría</h2>
-                <p class="mt-4 text-base text-gray-500">Each season, we collaborate with world-class designers to create
-                    a collection inspired by the natural world.</p>
+                <p class="mt-4 text-base text-gray-500">Descubre la elegancia del ónix en cada detalle. Desde
+                    iluminación cálida y sofisticada hasta piezas decorativas y lavabos exclusivos, transforma tus
+                    espacios con la belleza natural de esta piedra única.</p>
 
                 <div class="mt-10 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
                     <a v-for="collection in collections" :key="collection.name" :href="collection.href"
@@ -337,16 +333,17 @@
                         <img
                             src="/bg/bg-2.png"
                             alt="La Casa del Onix" class="size-full object-cover"/>
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-55"></div>
                     </div>
                     <div class="relative bg-black/75 px-6 py-32 sm:px-12 sm:py-40 lg:px-16">
                         <div class="relative mx-auto flex max-w-3xl flex-col items-center text-center">
                             <h2 id="comfort-heading"
                                 class="text-3xl font-semibold tracking-normal text-khaki sm:text-4xl">
-                                Lavabos y recubrimientos</h2>
-                            <p class="mt-3 text-xl text-white">Endless tasks, limited hours, a single piece of paper.
-                                Not really a haiku, but we're doing our best here. No kanban boards, burndown charts, or
-                                tangled flowcharts with our Focus system. Just the undeniable urge to fill empty
-                                circles.</p>
+                                Dale a tu hogar la elegancia que merece</h2>
+                            <p class="mt-3 text-xl text-white hidden sm:block">Sumérgete en la majestuosidad del ónix, una piedra única
+                                que ilumina, decora y transforma. Desde lámparas que desprenden una luz hipnótica hasta
+                                lavabos que combinan arte y funcionalidad, cada pieza es una expresión de lujo y
+                                exclusividad. Eleva tus espacios con la elegancia atemporal del ónix.</p>
                             <a href="#"
                                class="mt-8 block w-full rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-black hover:bg-gray-100 sm:w-auto">Saber
                                 más</a>
@@ -356,72 +353,132 @@
             </section>
         </main>
 
-        <footer aria-labelledby="footer-heading" class="bg-black">
-            <h2 id="footer-heading" class="sr-only">Footer</h2>
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="py-20 xl:grid xl:grid-cols-3 xl:gap-8">
-                    <div class="grid grid-cols-2 gap-8 xl:col-span-2">
-                        <div class="space-y-12 md:grid md:grid-cols-2 md:gap-8 md:space-y-0">
-                            <div>
-                                <h3 class="text-sm font-medium text-white">Shop</h3>
-                                <ul role="list" class="mt-6 space-y-6">
-                                    <li v-for="item in footerNavigation.shop" :key="item.name" class="text-sm">
-                                        <a :href="item.href" class="text-gray-300 hover:text-white">{{ item.name }}</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3 class="text-sm font-medium text-white">Company</h3>
-                                <ul role="list" class="mt-6 space-y-6">
-                                    <li v-for="item in footerNavigation.company" :key="item.name" class="text-sm">
-                                        <a :href="item.href" class="text-gray-300 hover:text-white">{{ item.name }}</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="space-y-12 md:grid md:grid-cols-2 md:gap-8 md:space-y-0">
-                            <div>
-                                <h3 class="text-sm font-medium text-white">Account</h3>
-                                <ul role="list" class="mt-6 space-y-6">
-                                    <li v-for="item in footerNavigation.account" :key="item.name" class="text-sm">
-                                        <a :href="item.href" class="text-gray-300 hover:text-white">{{ item.name }}</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3 class="text-sm font-medium text-white">Connect</h3>
-                                <ul role="list" class="mt-6 space-y-6">
-                                    <li v-for="item in footerNavigation.connect" :key="item.name" class="text-sm">
-                                        <a :href="item.href" class="text-gray-300 hover:text-white">{{ item.name }}</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-12 md:mt-16 xl:mt-0">
-                        <h3 class="text-sm font-medium text-white">Sign up for our newsletter</h3>
-                        <p class="mt-6 text-sm text-gray-300">The latest deals and savings, sent to your inbox
-                            weekly.</p>
-                        <form class="mt-2 flex sm:max-w-md">
-                            <input id="email-address" type="text" autocomplete="email" required=""
-                                   aria-label="Email address"
-                                   class="block w-full rounded-md bg-white px-4 py-2 text-base text-black outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white"/>
-                            <div class="ml-4 shrink-0">
-                                <button type="submit"
-                                        class="flex w-full items-center justify-center rounded-md border border-transparent bg-khaki px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-black focus:outline-none focus:ring-2 focus:ring-khaki focus:ring-offset-2 focus:ring-offset-black">
-                                    Sign up
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
 
-                <div class="border-t border-gray-800 py-10">
-                    <p class="text-sm text-gray-400">Copyright &copy; 2025 La Casa del Onix</p>
+    </div>
+
+    <div class="relative isolate bg-white">
+        <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+            <div class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
+                <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
+                    <div
+                        class="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-900/10 lg:w-1/2">
+                        <svg
+                            class="absolute inset-0 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                            aria-hidden="true">
+                            <defs>
+                                <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200"
+                                         x="100%" y="-1" patternUnits="userSpaceOnUse">
+                                    <path d="M130 200V.5M.5 .5H200" fill="none"/>
+                                </pattern>
+                            </defs>
+                            <rect width="100%" height="100%" stroke-width="0" fill="white"/>
+                            <svg x="100%" y="-1" class="overflow-visible fill-gray-50">
+                                <path d="M-470.5 0h201v201h-201Z" stroke-width="0"/>
+                            </svg>
+                            <rect width="100%" height="100%" stroke-width="0"
+                                  fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)"/>
+                        </svg>
+                    </div>
+                    <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                        Ponte en contacto</h2>
+                    <p class="mt-6 text-lg/8 text-gray-600 hidden sm:block">Estamos aquí para ayudarte. Si tienes dudas,
+                        consultas o buscas una pieza única de ónix, contáctanos y hagamos realidad tu visión. Tu
+                        espacio merece lo mejor.</p>
+                    <dl class="mt-10 space-y-4 text-base/7 text-gray-600">
+                        <div class="flex gap-x-4">
+                            <dt class="flex-none">
+                                <span class="sr-only">Dirección</span>
+                                <BuildingStorefrontIcon class="h-7 w-6 text-gray-400" aria-hidden="true"/>
+                            </dt>
+                            <dd>Blvd. Francisco Medina Ascencio #9500 int-132, <br/>Las juntas, Puerto Vallarta,
+                                Jalisco CP 48291
+                            </dd>
+                        </div>
+                        <div class="flex gap-x-4">
+                            <dt class="flex-none">
+                                <span class="sr-only">Teléfono</span>
+                                <PhoneIcon class="h-7 w-6 text-gray-400" aria-hidden="true"/>
+                            </dt>
+                            <dd><a class="hover:text-gray-900" href="tel:+52 (322) 290 2261">+52 (322) 290
+                                2261</a></dd>
+                            <dd><a class="hover:text-gray-900" href="tel:+52 (322) 232 4644">
+
+                                <b>Whats:</b>+52 (322) 232 4644</a></dd>
+                        </div>
+                        <div class="flex gap-x-4">
+                            <dt class="flex-none">
+                                <span class="sr-only">Email</span>
+                                <EnvelopeIcon class="h-7 w-6 text-gray-400" aria-hidden="true"/>
+                            </dt>
+                            <dd><a class="hover:text-gray-900"
+                                   href="mailto:ventas@lacasadelonix.com">ventas@lacasadelonix.com</a></dd>
+                        </div>
+                        <hr>
+                        <div class="flex space-x-4">
+                            <a href="https://facebook.com/lacasadelonix" target="_blank" rel="noopener noreferrer">
+                                <Facebook class="w-6 h-6 text-blue-600 hover:text-blue-800"/>
+                            </a>
+                            <a href="https://instagram.com/lacasadelonix" target="_blank" rel="noopener noreferrer">
+                                <Instagram class="w-6 h-6 text-pink-500 hover:text-pink-700"/>
+                            </a>
+                        </div>
+                    </dl>
                 </div>
             </div>
-        </footer>
+            <form action="#" method="POST" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+                <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                        <div>
+                            <label for="first-name"
+                                   class="block text-sm/6 font-semibold text-gray-900">Nombre</label>
+                            <div class="mt-2.5">
+                                <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                                       class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-khaki"/>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="last-name"
+                                   class="block text-sm/6 font-semibold text-gray-900">Apellido</label>
+                            <div class="mt-2.5">
+                                <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                       class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-khaki"/>
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="email" class="block text-sm/6 font-semibold text-gray-900">Email</label>
+                            <div class="mt-2.5">
+                                <input type="email" name="email" id="email" autocomplete="email"
+                                       class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-khaki"/>
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="phone-number"
+                                   class="block text-sm/6 font-semibold text-gray-900">Teléfono</label>
+                            <div class="mt-2.5">
+                                <input type="tel" name="phone-number" id="phone-number" autocomplete="tel"
+                                       class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-khaki"/>
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="message"
+                                   class="block text-sm/6 font-semibold text-gray-900">Mensaje</label>
+                            <div class="mt-2.5">
+                                        <textarea name="message" id="message" rows="4"
+                                                  class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-khaki"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex justify-end">
+                        <button type="submit"
+                                class="rounded-md bg-khaki px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-khaki">
+                            Enviar mensaje
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
+
 </template>
 
 <script setup>
@@ -446,10 +503,13 @@ import {
     Bars3Icon,
     MagnifyingGlassIcon,
     QuestionMarkCircleIcon,
-    ShoppingBagIcon,
+    EnvelopeIcon,
+    PhoneIcon,
     XMarkIcon,
+    BuildingStorefrontIcon,
 } from '@heroicons/vue/24/outline'
 import {ChevronDownIcon} from '@heroicons/vue/20/solid'
+import {Instagram, Facebook} from "lucide-vue-next"
 
 const currencies = ['MXN', 'USD', 'EUR']
 const navigation = {
@@ -548,55 +608,28 @@ const categories = [
 ]
 const collections = [
     {
-        name: 'Lavabos',
-        href: '#',
-        imageSrc: '/categorias/lavabos.png',
-        imageAlt: 'Brown leather key ring with brass metal loops and rivets on wood table.',
-        description: 'Keep your phone, keys, and wallet together, so you can lose everything at once.',
-    },
-    {
-        name: 'Lámparas',
+        name: 'Iluminación',
         href: '#',
         imageSrc: '/categorias/lamparas.png',
-        imageAlt: 'Natural leather mouse pad on white desk next to porcelain mug and keyboard.',
-        description: 'The rest of the house will still be a mess, but your desk will look great.',
+        imageAlt: 'iluminacion Onix',
+        description: ' Lámparas y accesorios de ónix que crean ambientes cálidos y elegantes con su brillo natural.',
     },
     {
         name: 'Decoración',
         href: '#',
         imageSrc: '/categorias/decoracion.png',
-        imageAlt: 'Person placing task list card into walnut card holder next to felt carrying case on leather desk pad.',
-        description: 'Be more productive than enterprise project managers with a single piece of paper.',
+        imageAlt: 'Decoración Onix',
+        description: 'Piezas únicas de ónix que realzan cualquier espacio con su belleza y sofisticación.',
+    },
+    {
+        name: 'Baños',
+        href: '#',
+        imageSrc: '/categorias/lavabos.png',
+        imageAlt: 'Baños Onix',
+        description: 'Lavabos y detalles en ónix que combinan lujo y estilo para transformar tu baño.',
     },
 ]
-const footerNavigation = {
-    shop: [
-        {name: 'Bags', href: '#'},
-        {name: 'Tees', href: '#'},
-        {name: 'Objects', href: '#'},
-        {name: 'Home Goods', href: '#'},
-        {name: 'Accessories', href: '#'},
-    ],
-    company: [
-        {name: 'Who we are', href: '#'},
-        {name: 'Sustainability', href: '#'},
-        {name: 'Press', href: '#'},
-        {name: 'Careers', href: '#'},
-        {name: 'Terms & Conditions', href: '#'},
-        {name: 'Privacy', href: '#'},
-    ],
-    account: [
-        {name: 'Manage Account', href: '#'},
-        {name: 'Returns & Exchanges', href: '#'},
-        {name: 'Redeem a Gift Card', href: '#'},
-    ],
-    connect: [
-        {name: 'Contact Us', href: '#'},
-        {name: 'Facebook', href: '#'},
-        {name: 'Instagram', href: '#'},
-        {name: 'Pinterest', href: '#'},
-    ],
-}
+
 
 const mobileMenuOpen = ref(false)
 </script>
