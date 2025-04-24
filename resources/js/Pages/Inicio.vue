@@ -70,8 +70,7 @@
 
                             <div class="space-y-6 border-t border-gray-200 px-4 py-6">
                                 <div class="flow-root">
-                                    <a href="#" class="-m-2 block p-2 font-medium text-black">Create an account</a>
-                                    <a href="#" class="-m-2 block p-2 font-medium text-black">Create an account</a>
+                                    <a href="#" class="-m-2 block p-2 font-medium text-black">Crear una cuenta</a>
                                 </div>
                             </div>
 
@@ -120,15 +119,13 @@
                                             class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-black py-0.5 pl-2 pr-7 text-left text-base font-medium text-white focus:outline focus:outline-2 focus:-outline-offset-1 focus:outline-white sm:text-sm/6">
                                         <option v-for="currency in currencies" :key="currency">{{ currency }}</option>
                                     </select>
-                                    <ChevronDownIcon
-                                        class="pointer-events-none col-start-1 row-start-1 mr-1 size-5 self-center justify-self-end fill-gray-300"
-                                        aria-hidden="true"/>
+
                                 </div>
                             </form>
 
                             <div class="flex items-center space-x-6">
-                                <a href="#" class="text-sm font-medium text-white hover:text-gray-100">Entrar</a>
-                                <a href="#" class="text-sm font-medium text-white hover:text-gray-100">Registrarse</a>
+                                <a href="/login" class="text-sm font-medium text-white hover:text-gray-100">Entrar</a>
+                                <a href="/register" class="text-sm font-medium text-white hover:text-gray-100">Registrarse</a>
                             </div>
                         </div>
                     </div>
@@ -191,8 +188,7 @@
                                                                                       aria-hidden="true"/>
                                                                                 {{ item.name }}
                                                                             </a>
-                                                                            <p aria-hidden="true" class="mt-1">Shop
-                                                                                now</p>
+                                                                            <p aria-hidden="true" class="mt-1">Ver más</p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -268,7 +264,7 @@
 
         <main>
             <!-- Collection section -->
-            <section aria-labelledby="collection-heading"
+            <section aria-labelledby="collection-heading" id="categorias"
                      class="mx-auto max-w-xl px-4 pt-24 sm:px-6 sm:pt-32 lg:max-w-7xl lg:px-8">
                 <h2 id="collection-heading" class="text-2xl font-semibold tracking-normal text-black">Comprar por
                     categoría</h2>
@@ -287,7 +283,7 @@
                 </div>
             </section>
             <!-- Category section -->
-            <section aria-labelledby="category-heading" class="pt-24 sm:pt-32 xl:mx-auto xl:max-w-7xl xl:px-8">
+            <section aria-labelledby="category-heading" class="pt-24 sm:pt-32 xl:mx-auto xl:max-w-7xl xl:px-8" id="productos">
                 <div class="px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 xl:px-0">
                     <h2 id="category-heading" class="text-2xl font-semibold tracking-normal text-black">Comprar por
                         productos</h2>
@@ -425,7 +421,7 @@
                     </dl>
                 </div>
             </div>
-            <form action="#" method="POST" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+            <form action="#" method="POST" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48" id="contacto">
                 <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
                     <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                         <div>
@@ -515,67 +511,31 @@ const currencies = ['MXN', 'USD', 'EUR']
 const navigation = {
     categories: [
         {
-            name: 'Productos',
+            name: 'Categorias',
             featured: [
                 {
-                    name: 'New Arrivals',
+                    name: 'Iluminación',
                     href: '#',
-                    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-01.jpg',
+                    imageSrc: '/categorias/lamparas.png',
                     imageAlt: 'Models sitting back to back, wearing Basic Tee in black and bone.',
                 },
                 {
-                    name: 'Basic Tees',
+                    name: 'Decoración',
                     href: '#',
-                    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-02.jpg',
+                    imageSrc: '/categorias/decoracion.png',
                     imageAlt: 'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
                 },
                 {
-                    name: 'Accessories',
+                    name: 'Baños',
                     href: '#',
-                    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-03.jpg',
+                    imageSrc: '/categorias/lavabos.png',
                     imageAlt: 'Model wearing minimalist watch with black wristband and white watch face.',
-                },
-                {
-                    name: 'Carry',
-                    href: '#',
-                    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-04.jpg',
-                    imageAlt: 'Model opening tan leather long wallet with credit card pockets and cash pouch.',
-                },
-            ],
-        },
-        {
-            name: 'Nosotros',
-            featured: [
-                {
-                    name: 'New Arrivals',
-                    href: '#',
-                    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-01-men-category-01.jpg',
-                    imageAlt: 'Hats and sweaters on wood shelves next to various colors of t-shirts on hangers.',
-                },
-                {
-                    name: 'Basic Tees',
-                    href: '#',
-                    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-01-men-category-02.jpg',
-                    imageAlt: 'Model wearing light heather gray t-shirt.',
-                },
-                {
-                    name: 'Accessories',
-                    href: '#',
-                    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-01-men-category-03.jpg',
-                    imageAlt:
-                        'Grey 6-panel baseball hat with black brim, black mountain graphic on front, and light heather gray body.',
-                },
-                {
-                    name: 'Carry',
-                    href: '#',
-                    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-01-men-category-04.jpg',
-                    imageAlt: 'Model putting folded cash into slim card holder olive leather wallet with hand stitching.',
                 },
             ],
         },
     ],
     pages: [
-        {name: 'Nosotros', href: '#nosotros'},
+        {name: 'Productos', href: '#productos'},
         {name: 'Contacto', href: '#contacto'},
     ],
 }
