@@ -15,7 +15,7 @@
                     </div>
                     <div class="flex shrink-0 items-center">
                         <img class="h-10 w-auto"
-                             src="/logos/Onix_Logo_RGB_12.png"
+                             src="/logos/Onix_Logo_RGB_12.webp"
                              alt="La Casa del Onix"/>
                     </div>
                     <div class="hidden md:ml-6 md:flex md:items-center md:space-x-4">
