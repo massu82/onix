@@ -11,7 +11,7 @@ import Cta from "@/Components/Cta.vue";
         description="Lámparas y accesorios de ónix que crean ambientes cálidos y elegantes con su brillo natural."
         titulo="Iluminación"
         subtitle="Lámparas y accesorios de ónix que crean ambientes cálidos y elegantes con su brillo natural."
-        imageUrl="/categorias/onix-light.jpg"
+        imageUrl="/categorias/onix-light.webp"
         headerClass="relative mx-auto flex max-w-3xl flex-col items-center px-6 py-16 text-center sm:py-32 lg:px-0"
     >
 

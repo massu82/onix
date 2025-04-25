@@ -11,7 +11,7 @@ import Cta from "@/Components/Cta.vue";
         description="Lavabos y detalles en ónix que combinan lujo y estilo para transformar tu baño."
         titulo="Baños"
         subtitle="Lavabos y detalles en ónix que combinan lujo y estilo para transformar tu baño."
-        imageUrl="/categorias/onix-banos.jpg"
+        imageUrl="/categorias/onix-banos.webp"
         headerClass="relative mx-auto flex max-w-3xl flex-col items-center px-6 py-16 text-center sm:py-32 lg:px-0"
     >
         <Productos/>

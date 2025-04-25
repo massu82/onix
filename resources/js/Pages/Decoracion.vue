@@ -11,7 +11,7 @@ import Cta from "@/Components/Cta.vue";
         description="Piezas únicas de ónix que realzan cualquier espacio con su belleza y sofisticación."
         titulo="Decoración"
         subtitle="Piezas únicas de ónix que realzan cualquier espacio con su belleza y sofisticación."
-        imageUrl="/categorias/onix-decoracion.jpg"
+        imageUrl="/categorias/onix-decoracion.webp"
         headerClass="relative mx-auto flex max-w-3xl flex-col items-center px-6 py-16 text-center sm:py-32 lg:px-0"
     >
         <Productos/>
